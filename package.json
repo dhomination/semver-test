@@ -1,0 +1,22 @@
+{
+  "name": "semver-test",
+  "version": "0.0.1",
+  "description": "test semver tooling",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhomination/semver-test.git"
+  },
+  "keywords": [
+    "semver"
+  ],
+  "author": "jdhom",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhomination/semver-test/issues"
+  },
+  "homepage": "https://github.com/dhomination/semver-test#readme"
+}
