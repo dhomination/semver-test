@@ -9,17 +9,18 @@ on:
 jobs:
   cibuild:
     runs-on: ubuntu-latest
-  steps:
-    - name: workspace BEFORE
-      run: ls -al
+    
+    steps:
+      - name: workspace BEFORE
+        run: ls -al
 
-    - uses: actions/checkout@v2
-    
-    - uses: actions/setup-node@v1
-    
-    - name: npm install
-      run: npm install
-    
-    - name: workspace AFTER
-      run: ls -al
+      - uses: actions/checkout@v2
+      
+      - uses: actions/setup-node@v1
+      
+      - name: npm install
+        run: npm install
+      
+      - name: workspace AFTER
+        run: ls -al
   
