@@ -1,0 +1,26 @@
+name: fullstack101 Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  cibuild:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: workspace BEFORE
+        run: ls -al
+
+      - uses: actions/checkout@v2
+    
+      - uses: actions/setup-node@v2-beta
+      
+      - name: npm install
+        run: npm install
+      
+      - name: workspace AFTER
+        run: ls -al
+  
